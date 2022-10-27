@@ -1,0 +1,52 @@
+@keyframes h1-load {
+    0% {
+        opacity: 0;
+        transform: translate(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes h2-load {
+    0% {
+        opacity: 0;
+        transform: translate(0, 100px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes line-load {
+    0% {
+        /* opacity: 0; */
+        width: 0%;
+    }
+
+    30% {
+        width: 0%;
+    }
+
+    100% {
+        /* opacity: 1; */
+        width: 99%;
+    }
+}
+
+@keyframes scroll-load {
+    0% {
+        opacity: 0;
+        transform: translate(0, 100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

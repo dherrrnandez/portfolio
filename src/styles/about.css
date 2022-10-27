@@ -1,0 +1,82 @@
+#about {
+  display: grid;
+  grid-template-columns: clamp(225px, 22vw, 425px) 1fr;
+  align-items: center;
+  padding: 60px 0;
+}
+#about h1 {
+  grid-column: span 2;
+  margin-bottom: 6rem;
+  font-size: min(6vw, 6rem);
+  font-weight: 600;
+}
+
+.about_img {
+  margin: auto;
+}
+.about_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: clamp(200px, 20vw, 350px);
+  height: clamp(200px, 20vw, 350px);
+  border-radius: 100%;
+}
+
+.about_info {
+  margin-left: 4rem;
+}
+.about_info h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+.about_info p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+.about_info p span {
+  font-weight: 600;
+}
+
+.about_stack {
+  margin-top: 8rem;
+  width: 100%;
+  grid-column: span 2;
+}
+.about_stack h2 {
+  grid-column: span 2;
+  padding-bottom: 4rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.about_stack p {
+  width: 60%;
+  margin: auto;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.about_logos {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0 4rem;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+.about_logo img {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=about.css.map */

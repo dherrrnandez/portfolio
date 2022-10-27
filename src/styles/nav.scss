@@ -1,0 +1,109 @@
+@import url(./anim/nav-anim.css);
+
+
+nav {
+    position: fixed;
+    margin: auto;
+    width: clamp(200px, 79vw, 1200px);
+    padding: 1rem 0;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+
+    border-bottom: 2px solid;
+    background-color: var(--bg-color);
+    z-index: 10;
+
+    animation: nav-load 700ms ease-in-out 300ms both;
+
+    p {
+        font-weight: 300;
+    }
+
+    .nav_p {
+        text-align: right;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a {
+        font-size: 1.25rem;
+        font-weight: 700;
+
+        transition: color 200ms;
+    }
+
+    a:hover {
+        color: var(--accent);
+    }
+
+    #hamIcon {
+        width: 30px;
+        padding: 0.5rem;
+        display: none;
+        background-color: none;
+        cursor: pointer;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    nav {
+        display: flex;
+        margin: 0;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        justify-content: center;
+        padding: 0.25rem 0;
+
+        #hamIcon {
+            display: inline-block;
+        }
+
+        .menu {
+            position: absolute;
+            flex-direction: column;
+            gap: 5rem;
+            background-color: var(--bg-color);
+            justify-content: flex-start;
+
+
+            text-align: center;
+            min-height: 100vh;
+            margin: auto;
+            width: 120%;
+            padding-top: 150px;
+            top: 0;
+            right: 0;
+            left: 150%;
+
+            z-index: -1;
+
+            transition: left 0.7s;
+
+            a {
+                font-size: 2.5rem;
+            }
+        }
+
+        .menu.active {
+            left: -10%;
+        }
+
+        p {
+            display: none;
+        }
+    }
+
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    nav {
+        animation: none;
+    }
+}

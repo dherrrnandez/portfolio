@@ -1,0 +1,9 @@
+@keyframes nav-load {
+    0% {
+        transform: translateY(-110%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

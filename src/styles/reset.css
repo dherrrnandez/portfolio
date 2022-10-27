@@ -1,0 +1,47 @@
+/* SIMPLE AND HELPFUL RESET */
+:root {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    outline: none;
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+cite {
+    font-style: normal;
+}
+
+fieldset {
+    border-width: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul,
+ol,
+dd {
+    list-style: none;
+}

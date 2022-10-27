@@ -1,0 +1,28 @@
+@import "reset.css";
+@import "nav.css";
+@import "hero.css";
+@import "work.css";
+@import "about.css";
+@import "footer.css";
+
+:root {
+    --color: #F5F5EA;
+    --accent: #c2c2b7;
+    --bg-color: #1A1A1A;
+
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: N;
+    color: var(--color);
+}
+
+body {
+    background-color: var(--bg-color);
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+.ham_active {
+    overflow: hidden;
+}
