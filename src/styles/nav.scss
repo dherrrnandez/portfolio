@@ -1,10 +1,14 @@
-@import url(./anim/nav-anim.css);
-
-
-nav {
+header {
     position: fixed;
     margin: auto;
-    width: clamp(200px, 79vw, 1200px);
+    left: 0;
+    right: 0;
+    padding: 0 5rem;
+    max-width: 1200px;
+    z-index: 10;
+}
+
+nav {
     padding: 1rem 0;
 
     display: grid;
@@ -13,9 +17,6 @@ nav {
 
     border-bottom: 2px solid;
     background-color: var(--bg-color);
-    z-index: 10;
-
-    animation: nav-load 700ms ease-in-out 300ms both;
 
     p {
         font-weight: 300;
@@ -43,6 +44,7 @@ nav {
 
     #hamIcon {
         width: 30px;
+        height: 30px;
         padding: 0.5rem;
         display: none;
         background-color: none;
@@ -52,6 +54,10 @@ nav {
 }
 
 @media only screen and (max-width: 1000px) {
+    header {
+        padding: 0 1rem;
+    }
+
     nav {
         display: flex;
         margin: 0;
@@ -100,10 +106,4 @@ nav {
     }
 
 
-}
-
-@media (prefers-reduced-motion: reduce) {
-    nav {
-        animation: none;
-    }
 }

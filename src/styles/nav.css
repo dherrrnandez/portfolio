@@ -1,17 +1,20 @@
-@import url(./anim/nav-anim.css);
-nav {
+header {
   position: fixed;
   margin: auto;
-  width: clamp(200px, 79vw, 1200px);
+  left: 0;
+  right: 0;
+  padding: 0 5rem;
+  max-width: 1200px;
+  z-index: 10;
+}
+
+nav {
   padding: 1rem 0;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   border-bottom: 2px solid;
   background-color: var(--bg-color);
-  z-index: 10;
-  -webkit-animation: nav-load 700ms ease-in-out 300ms both;
-          animation: nav-load 700ms ease-in-out 300ms both;
 }
 nav p {
   font-weight: 300;
@@ -33,6 +36,7 @@ nav a:hover {
 }
 nav #hamIcon {
   width: 30px;
+  height: 30px;
   padding: 0.5rem;
   display: none;
   background-color: none;
@@ -40,6 +44,9 @@ nav #hamIcon {
 }
 
 @media only screen and (max-width: 1000px) {
+  header {
+    padding: 0 1rem;
+  }
   nav {
     display: flex;
     margin: 0;
@@ -76,11 +83,5 @@ nav #hamIcon {
   }
   nav p {
     display: none;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  nav {
-    -webkit-animation: none;
-            animation: none;
   }
 }/*# sourceMappingURL=nav.css.map */

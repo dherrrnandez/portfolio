@@ -15,11 +15,18 @@
 }
 
 body {
-    background-color: var(--bg-color);
-    width: 80%;
-    max-width: 1200px;
-    margin: auto;
     position: relative;
+    margin: auto;
+    padding: 0 5rem;
+    max-width: 1200px;
+
+    background-color: var(--bg-color);
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        padding: 0 1rem;
+    }
 }
 
 .ham_active {
