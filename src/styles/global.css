@@ -10,8 +10,7 @@
     --accent: #c2c2b7;
     --bg-color: #1A1A1A;
 
-    /* font-family: Arial, Helvetica, sans-serif; */
-    font-family: N;
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--color);
 }
 
