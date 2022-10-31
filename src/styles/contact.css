@@ -11,8 +11,17 @@
     text-align: left;
 }
 
+.contact a {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.contact a:hover {
+    color: var(--accent);
+}
+
 .contact h2 {
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     font-size: 3rem;
     font-weight: 600;
 }
