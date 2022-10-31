@@ -4,6 +4,7 @@
   grid-template-columns: clamp(225px, 22vw, 425px) 1fr;
   align-items: center;
   padding: 60px 0;
+  margin-bottom: 8rem;
 }
 
 #about h1 {
