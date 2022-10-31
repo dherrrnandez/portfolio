@@ -59,6 +59,8 @@
 }
 
 .hero_resume {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin: auto;
   border-radius: 10px;
@@ -92,10 +94,10 @@
   }
 
   .hero h2 {
-    font-size: 6vw;
     padding: 0;
-    -webkit-text-stroke: 0;
     letter-spacing: normal;
+    font-size: 6vw;
+    -webkit-text-stroke: 0;
     -webkit-animation: none;
     animation: none;
   }
