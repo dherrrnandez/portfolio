@@ -1,8 +1,10 @@
 @import url(./anim/hero-anim.css);
+
 .hero {
   padding: 8rem 0 4rem;
   width: 100%;
 }
+
 .hero h1 {
   display: flex;
   font-size: min(11vw, 10rem);
@@ -10,14 +12,17 @@
   letter-spacing: 8px;
   line-height: 1;
 }
+
 .hero .hero_h1-first {
   -webkit-animation: h1-load 700ms ease-in-out both;
-          animation: h1-load 700ms ease-in-out both;
+  animation: h1-load 700ms ease-in-out both;
 }
+
 .hero .hero_h1-second {
   -webkit-animation: h1-load 700ms ease-in-out 200ms both;
-          animation: h1-load 700ms ease-in-out 200ms both;
+  animation: h1-load 700ms ease-in-out 200ms both;
 }
+
 .hero span {
   display: inline-block;
   color: transparent;
@@ -26,14 +31,16 @@
   transition: text-shadow 200ms;
   cursor: default;
 }
+
 .hero .line {
   height: 2px;
   width: 100%;
   margin: auto;
   background-color: var(--color);
   -webkit-animation: line-load 1000ms ease-in-out both;
-          animation: line-load 1000ms ease-in-out both;
+  animation: line-load 1000ms ease-in-out both;
 }
+
 .hero h2 {
   display: inline-block;
   padding: 0 5px;
@@ -44,7 +51,7 @@
   -webkit-text-stroke: 2px var(--color);
   transition: color 300ms;
   -webkit-animation: h2-load 700ms ease-in-out 400ms both;
-          animation: h2-load 700ms ease-in-out 400ms both;
+  animation: h2-load 700ms ease-in-out 400ms both;
   cursor: default;
 }
 
@@ -56,7 +63,7 @@
   padding-bottom: 8rem;
   transition: color 200ms;
   -webkit-animation: scroll-load 700ms ease-in-out 1300ms both;
-          animation: scroll-load 700ms ease-in-out 1300ms both;
+  animation: scroll-load 700ms ease-in-out 1300ms both;
 }
 
 .hero_scroll:hover {
@@ -67,57 +74,68 @@
   .hero span:hover {
     text-shadow: -10px -15px var(--color);
   }
+
   .hero h2:hover {
     color: transparent;
   }
 }
+
 @media only screen and (max-width: 1001px) {
   .hero span {
     font-size: 12vw;
     letter-spacing: normal;
     -webkit-text-stroke: 0;
   }
+
   .hero h2 {
     font-size: 6vw;
     padding: 0;
     -webkit-text-stroke: 0;
     letter-spacing: normal;
     -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
+
   .hero .hero_h1-first {
     -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
+
   .hero .hero_h1-second {
     -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
+
   .hero .line {
     -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
+
   .hero_scroll {
     display: none;
     -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
 }
+
 @media (prefers-reduced-motion: reduce) {
   .hero .hero_h1-first {
     -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
+
   .hero .hero_h1-second {
     -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
+
   .hero .line {
     -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
+
   .hero_scroll {
     -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
-}/*# sourceMappingURL=hero.css.map */
+}

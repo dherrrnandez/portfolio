@@ -25,12 +25,7 @@
 }
 
 .work_a {
-  padding: 0.5rem 0;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   font-size: 2rem;
-  font-weight: 300;
 }
 
 .work_a:hover {
@@ -73,5 +68,5 @@
 }
 
 .isActive {
-  font-weight: 400;
+  font-weight: 600;
 }/*# sourceMappingURL=work.css.map */

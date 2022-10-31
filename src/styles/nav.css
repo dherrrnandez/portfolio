@@ -16,24 +16,30 @@ nav {
   border-bottom: 2px solid;
   background-color: var(--bg-color);
 }
+
 nav p {
   font-weight: 300;
 }
+
 nav .nav_p {
   text-align: right;
 }
+
 nav .menu {
   display: flex;
   justify-content: space-between;
 }
+
 nav a {
   font-size: 1.25rem;
   font-weight: 700;
   transition: color 200ms;
 }
+
 nav a:hover {
   color: var(--accent);
 }
+
 nav #hamIcon {
   width: 30px;
   height: 30px;
@@ -47,6 +53,7 @@ nav #hamIcon {
   header {
     padding: 0 1rem;
   }
+
   nav {
     display: flex;
     margin: 0;
@@ -55,9 +62,11 @@ nav #hamIcon {
     justify-content: center;
     padding: 0.25rem 0;
   }
+
   nav #hamIcon {
     display: inline-block;
   }
+
   nav .menu {
     position: absolute;
     flex-direction: column;
@@ -75,13 +84,18 @@ nav #hamIcon {
     z-index: -1;
     transition: left 0.7s;
   }
+
   nav .menu a {
     font-size: 2.5rem;
   }
+
   nav .menu.active {
     left: -10%;
   }
+
   nav p {
     display: none;
   }
-}/*# sourceMappingURL=nav.css.map */
+}
+
+/*# sourceMappingURL=nav.css.map */
