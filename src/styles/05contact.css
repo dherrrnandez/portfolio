@@ -21,14 +21,17 @@
 }
 
 .contact h2 {
-    padding-bottom: 2rem;
+    padding-bottom: 6rem;
     font-size: 3rem;
     font-weight: 600;
 }
 
 .contact_wrapper {
     display: grid;
-    gap: 3rem;
+    margin: auto;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
 }
 
 .contact_wrapper h3 {

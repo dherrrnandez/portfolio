@@ -228,6 +228,12 @@
 
 /* CONTACT */
 
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+    .contact_wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media screen and (max-width: 750px) {
     .contact h1 {
         font-size: max(7vw, 3rem);
@@ -235,6 +241,7 @@
     }
 
     .contact_wrapper {
+        grid-template-columns: 1fr;
         gap: 3rem;
     }
 
