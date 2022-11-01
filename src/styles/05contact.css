@@ -1,5 +1,5 @@
 .contact {
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
     padding: 60px 0;
     text-align: center;
 }
@@ -28,7 +28,7 @@
 
 .contact_wrapper {
     display: grid;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .contact_wrapper h3 {

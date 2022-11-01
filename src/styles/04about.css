@@ -1,13 +1,12 @@
-#about {
+.about {
   width: 100%;
   display: grid;
   grid-template-columns: clamp(225px, 22vw, 425px) 1fr;
-  align-items: center;
   padding: 60px 0;
   margin-bottom: 8rem;
 }
 
-#about h1 {
+.about h1 {
   grid-column: span 2;
   margin-bottom: 6rem;
   font-size: min(6vw, 6rem);
@@ -27,7 +26,7 @@
 }
 
 .about_info {
-  margin-left: 4rem;
+  padding-left: 4rem;
 }
 
 .about_info h2 {
@@ -96,15 +95,4 @@
   transform: translate(0, -15px);
   padding-bottom: 15px;
   margin-bottom: 0;
-}
-
-@media screen and (max-width: 1000px) {
-  #about {
-    grid-template-columns: 1fr 3fr;
-  }
-
-  .about_img img {
-    width: 150px;
-    height: 150px;
-  }
 }

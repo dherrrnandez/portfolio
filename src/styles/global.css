@@ -1,10 +1,11 @@
 @import "reset.css";
-@import "nav.css";
-@import "hero.css";
-@import "work.css";
-@import "about.css";
-@import "contact.css";
-@import "footer.css";
+@import "01nav.css";
+@import "02hero.css";
+@import "03work.css";
+@import "04about.css";
+@import "05contact.css";
+@import "06footer.css";
+@import "mediaqueries.css";
 
 :root {
     --color: #F5F5EA;
@@ -22,10 +23,6 @@ body {
     max-width: 1200px;
 
     background-color: var(--bg-color);
-}
-
-.ham_active {
-    overflow: hidden;
 }
 
 @media screen and (max-width: 1000px) {

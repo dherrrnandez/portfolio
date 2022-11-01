@@ -11,7 +11,7 @@
 .work h1 {
   grid-column: span 2;
   margin-bottom: 6rem;
-  font-size: min(6vw, 6rem);
+  font-size: min(8vw, 8rem);
   font-weight: 600;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .work_a {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .work_a:hover {
@@ -42,13 +42,14 @@
 
 .work_img {
   position: absolute;
-  transform: translate(0, 30px);
-  opacity: 0;
   margin-right: 1rem;
-  overflow: hidden;
   width: clamp(250px, 30vw, 400px);
   height: clamp(250px, 30vw, 400px);
+  opacity: 0;
+  transform: translate(0, 30px);
   border-radius: 10px;
+  overflow: hidden;
+
   transition: opacity 200ms, transform 700ms, -webkit-filter 700ms;
   transition: opacity 200ms, filter 700ms, transform 700ms;
   transition: opacity 200ms, filter 700ms, transform 700ms, -webkit-filter 700ms;

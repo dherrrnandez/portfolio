@@ -1,0 +1,268 @@
+/* HEADER */
+
+@media screen and (max-width: 1000px) {
+    header {
+        padding: 0 1rem;
+    }
+
+    nav {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0.25rem 0;
+    }
+
+    nav #hamIcon {
+        display: inline-block;
+        margin: auto;
+    }
+
+    nav .menu {
+        position: absolute;
+        margin: auto;
+        padding-top: 150px;
+        min-height: 100vh;
+        width: 120%;
+        gap: 4rem;
+        top: 0;
+        right: 0;
+        left: 150%;
+        flex-direction: column;
+
+        justify-content: flex-start;
+        text-align: center;
+        background-color: var(--bg-color);
+        z-index: -1;
+        transition: left 0.7s;
+    }
+
+    nav .menu a {
+        font-size: 2.5rem;
+    }
+
+    nav .menu.active {
+        left: -10%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    nav p {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        margin: 0;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        justify-content: center;
+    }
+}
+
+
+/* HERO */
+
+@media only screen and (max-width: 1001px) {
+
+    .hero {
+        padding-bottom: 8rem;
+    }
+
+    .hero span {
+        font-size: 14vw;
+        letter-spacing: normal;
+        -webkit-text-stroke: 0;
+    }
+
+    .hero span:hover {
+        text-shadow: 0px 0px var(--color);
+    }
+
+    .hero h2 {
+        padding: 0;
+        letter-spacing: normal;
+        font-size: 7vw;
+        -webkit-text-stroke: 0;
+        -webkit-animation: none;
+        animation: none;
+    }
+
+    .hero h2:hover {
+        color: inherit;
+    }
+
+    .hero .hero_h1-first {
+        -webkit-animation: none;
+        animation: none;
+    }
+
+    .hero .hero_h1-second {
+        -webkit-animation: none;
+        animation: none;
+    }
+
+    .hero .line {
+        -webkit-animation: none;
+        animation: none;
+    }
+
+    .hero_resume {
+        font-size: 1.5rem;
+        -webkit-animation: none;
+        animation: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero .hero_h1-first {
+        -webkit-animation: none;
+        animation: none;
+    }
+
+    .hero .hero_h1-second {
+        -webkit-animation: none;
+        animation: none;
+    }
+
+    .hero .line {
+        -webkit-animation: none;
+        animation: none;
+    }
+
+    .hero_scroll {
+        -webkit-animation: none;
+        animation: none;
+    }
+}
+
+
+/* WORK */
+
+@media screen and (max-width: 1001px) {
+    .work {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .work_items li {
+        padding: 0.7rem 0;
+    }
+
+    .work_a {
+        font-size: max(3.5vw, 1rem);
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .work {
+        grid-template-columns: 1fr;
+        margin: 0 0 4rem;
+
+        transition: margin 300ms;
+    }
+
+    .active_project {
+        margin: 0 0 16rem;
+    }
+
+    .work_img {
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: clamp(340px, 70vw, 400px);
+    }
+
+    .work h1 {
+        font-size: max(7vw, 3rem);
+        margin: 0 0 2rem;
+    }
+}
+
+
+/* ABOUT */
+
+@media screen and (min-width: 500px) and (max-width: 1001px) {
+    .about_info {
+        margin: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-bottom: 0;
+    }
+
+    .about h1 {
+        font-size: max(7vw, 3rem);
+        margin: 0 0 2rem;
+        text-align: left;
+    }
+
+    .about_info {
+        padding-left: 0;
+    }
+
+    .about_img {
+        margin: auto;
+        padding-bottom: 2rem;
+    }
+
+    .about_info h2 {
+        font-size: 2rem;
+    }
+
+    .about_info p {
+        font-size: 1.25rem;
+    }
+
+    .about_stack h2 {
+        font-size: 2rem;
+    }
+
+    .about_stack p {
+        width: 90%;
+    }
+}
+
+/* CONTACT */
+
+@media screen and (max-width: 750px) {
+    .contact h1 {
+        font-size: max(7vw, 3rem);
+        margin: 0 0 2rem;
+    }
+
+    .contact_wrapper {
+        gap: 3rem;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact a {
+        font-size: 1.5rem;
+    }
+
+    .contact h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact p {
+        font-size: 1rem;
+    }
+}
+
+/* FOOTER */
+
+@media screen and (max-width: 1001px) {
+    footer {
+        width: 100%;
+    }
+
+    footer div {
+        gap: 1.5rem;
+    }
+}

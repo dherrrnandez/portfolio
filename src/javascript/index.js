@@ -4,6 +4,7 @@ const hamMenu = document.getElementById("hamIcon")
 const menuItem = document.querySelectorAll(".menu_item")
 const workImg = document.querySelectorAll(".work_img")
 const workAnchor = document.querySelectorAll(".work_a")
+const workSection = document.querySelector(".work")
 
 window.scrollTo(0, 0)
 
@@ -32,9 +33,10 @@ menuItem.forEach(item => {
     })
 })
 
-
 workAnchor.forEach((item, i) => {
     item.addEventListener("click", () => {
+        workSection.classList.add("active_project")
+
         workImg.forEach((item) => {
             item.classList.remove("active")
         })
