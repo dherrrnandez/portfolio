@@ -49,9 +49,8 @@
   transform: translate(0, 30px);
   border-radius: 10px;
   overflow: hidden;
+  pointer-events: none;
 
-  transition: opacity 200ms, transform 700ms, -webkit-filter 700ms;
-  transition: opacity 200ms, filter 700ms, transform 700ms;
   transition: opacity 200ms, filter 700ms, transform 700ms, -webkit-filter 700ms;
 }
 
@@ -72,6 +71,7 @@
 }
 
 .active {
+  pointer-events: auto;
   opacity: 1;
   z-index: 5;
   transform: translate(0);
