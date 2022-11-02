@@ -63,7 +63,7 @@
 @media only screen and (max-width: 1001px) {
 
     .hero {
-        padding-bottom: 8rem;
+        padding: 14rem 0;
     }
 
     .hero span {
@@ -183,6 +183,10 @@
     .about_info {
         margin: 0 2rem;
     }
+
+    .about h1 {
+        font-size: min(8vw, 8rem);
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -231,6 +235,10 @@
 @media screen and (min-width: 750px) and (max-width: 1000px) {
     .contact_wrapper {
         grid-template-columns: 1fr;
+    }
+
+    .contact h1 {
+        font-size: min(8vw, 8rem);
     }
 }
 
